@@ -43,8 +43,6 @@ const crearUsuario = (req, res) => {
 /**
  * GET /usuarios
  * Obtiene todos los usuarios
- * 
- * TODO: Completa esta función
  */
 const obtenerTodosLosUsuarios = (req, res) => {
   try {
@@ -60,8 +58,6 @@ const obtenerTodosLosUsuarios = (req, res) => {
 /**
  * GET /usuarios/:id
  * Obtiene un usuario específico por ID
- * 
- * TODO: Completa esta función
  */
 const obtenerUsuarioPorId = (req, res) => {
   try {
@@ -80,8 +76,6 @@ const obtenerUsuarioPorId = (req, res) => {
 /**
  * PATCH /usuarios/:id
  * Actualiza un usuario existente
- * 
- * TODO: Completa esta función
  */
 const actualizarUsuario = (req, res) => {
   try
