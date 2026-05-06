@@ -40,7 +40,7 @@ const obtenerTodosLosUsuarios = () => {
  * @returns {Object|null} El usuario encontrado o null
  */
 const obtenerUsuarioPorId = (id) => {
-  return usuarios.find(u => u.id === id)
+  return usuarios.find(u => u.id === parseInt(id))
 };
 
 /**
@@ -50,7 +50,7 @@ const obtenerUsuarioPorId = (id) => {
  * @returns {Object|null} El usuario actualizado o null si no existe
  */
 const actualizarUsuario = (id, datosActualizados) => {
-  const index = usuarios.findIndex(u => u.id === id)
+  const index = usuarios.findIndex(u => u.id === parseInt(id))
 
   if (index === -1) return null
 
@@ -65,7 +65,7 @@ const actualizarUsuario = (id, datosActualizados) => {
  * @returns {boolean} true si se eliminó, false si no existe
  */
 const eliminarUsuario = (id) => {
-  const index = usuarios.findIndex(usuario => usuario.id === id);
+  const index = usuarios.findIndex(usuario => usuario.id === parseInt(id));
   if (index === -1) return false;
   usuarios.splice(index, 1);
   return true;
